@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <title>Document</title>
+</head>
+<body class="bg-dark">
+    <button id="button" class="btn btn-light" style="position: absolute; top: 50%; left: 45%;">Viagem</button>
+
+    <script>
+        /*var button = document.getElementsByTagName("button")[0];
+        button.addEventListener("click", () =>{
+            var nome = prompt("Digite seu nome:");
+            var Trabalho = prompt("a quantos anos você trabalha?");
+            var TempoTrabalho = prompt("Você já trabalhou no minimo 30 dias com carteira assinada nesses ultimos 12 meses? Responda Sim ou Não");
+            var RendaMensal = prompt("No ano-base o trabalhador deve ter recebido uma renda mensal média de até R$ 2.090,00. Sua renda mensal é menor ou igual a esse valor? Responda Sim ou Não");
+            var Dados = prompt("O empregador precisa ter informado os dados do trabalhador corretamente no eSocial. Seus dados estão corretos? Responda Sim ou Não");
+
+            if (Trabalho >=5 && TempoTrabalho == "Sim" && RendaMensal == "Sim" && Dados == "Sim"){
+                alert("Você está apto a receber o PIS");
+            }
+            else{
+                alert("Você não está apto a receber o PIS");
+            }
+        })*/
+
+        /*var button = document.getElementById("button");
+        button.addEventListener("click", () =>{
+         
+            var nome = prompt("Digite seu nome: ");
+            var idade = prompt("Digite sua idade: ");
+            var escolaridad = prompt("Digite sua escolaridade (Ensino Fundamental, Ensino Médio, Ensino Superior): ");
+            var experiencia = prompt("Digite sua experiência profissional em anos: ");
+
+            if (idade >= 18 && (escolaridad == "Ensino Médio" || escolaridad == "Ensino Superior") && experiencia >= 2){
+                alert("Parabéns " + nome + ", você está qualificado para a vaga de emprego!");
+            }
+            else{
+            alert("Infelizmente " + nome + ", você não atende aos requisitos para a vaga de emprego.");
+            }
+            });*/
+
+            /*var  button = document.getElementById("button");
+            button.addEventListener("click", () =>{
+                var usuario = prompt("Digite seu nome do usuário, CPF OU E-mail :");
+                var senha = prompt("Digite sua senha: ");
+            
+                if ((usuario =="João324" || usuario == "334.556.678-90" || usuario == "joao324@gmail.com") && senha == "4456789"){
+                    alert("Login bem-sucedido! Bem-vindo, " + usuario + "!");
+                }
+                else{
+                    alert("Usuário ou senha incorretos. Tente novamente.");
+                }
+            });*/
+
+            var button = document.getElementById("button");
+            button.addEventListener("click", () =>{
+                var dinheiro = prompt("Saque um valor para a viagem em dinheiro: R$");
+                var clima = prompt("Sugestão conforme o clima (Verão, inverno, Primavera, Outono): ");
+                if (dinheiro >= 3000 && clima == "Inverno"){
+                    alert("Viagem para Canadá sugerida! Blue Montain, Whistler e Banff são ótimos destinos de inverno para uma viagem de 3000 você pode esquiar andar de bondinho etc...");
+
+                }
+               else if (dinheiro >= 3000 && clima == "Verão"){
+                    alert("Viagem para Grécia sugerida! Ilhas gregas como Santorini, Mykonos e Creta são destinos incríveis para aproveitar o verão com praias deslumbrantes e cultura rica.");
+
+                }
+               else if (dinheiro <= 2500 && clima == "Verão"){
+                    alert("Viagem para Brasil sugerida! Maragogi, Alagoas, Jericoacoara são ótimos destinos de verão para uma viagem de 2500 você pode aproveitar praias lindas, passeios de buggy etc...");
+                }
+                if (dinheiro <= 2500 && clima == "Inverno"){
+                    alert("Viagem para Serra Gaúcha sugerida! Gramado e Canela são destinos encantadores para aproveitar o inverno com clima frio, gastronomia deliciosa e atrações temáticas.");
+                }
+            })
+            
+
+    
+
+    </script>
+</body>
+</html>

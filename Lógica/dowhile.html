@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*var nota1;
+        var nota2;
+        do{
+            nota1 = parseFloat(prompt("Digite a nota da prova 1: "));
+        }while(nota1 < 0 || nota1 > 10 || isNaN(nota1));
+        do{
+            nota2 = parseFloat(prompt("Digite a nota da prova 2: "));
+        }while(nota2 <0 || nota2 > 10 || isNaN(nota2));
+        var total = parseFloat(nota1 + nota2 / 2);
+
+        alert("A média é: " + total.toFixed(1));*/
+
+        /*do{
+            var usuario = prompt("Usuário: ");
+            var senha = prompt("Senha: ")
+            if(usuario != "senac" || senha != "1234"){
+                alert("Usuário ou senha incorreto.");
+            }
+        }while(usuario != "senac" || senha != "1234")*/
+    var permanecer;
+    var saldo = parseFloat(15000).toFixed(2);
+    var saque;
+    var deposito = 0;
+    do{    
+        
+            do{
+        var opcao = prompt("1. saldo \n 2. depósito \n 3. saque");
+    }while(opcao > 3 || opcao <=0);
+    
+    if(opcao == "1"){
+        
+            alert("Saldo é: R$" + saldo);
+            
+        }
+        if(opcao == "2"){
+            do{
+            saldo = prompt("Digite o valor a depositar (depositos >5): ");
+            if(saldo >=5){
+                alert("Dinheiro depositado na conta! saldo: R$" + saldo);
+            }
+            else{
+                alert("Não pode depositar, por favor insira uma nota de R$5 ou mais para depositar.");
+            }
+            }
+            while(deposito > saldo){
+                 saldo += deposito;
+            
+            permanecer = confirm("Deseja fazer outra operação?");
+            while(permanecer == true);
+            }
+
+        }
+
+            if(opcao == "3"){
+            saque = prompt("Digite o valor do saque: R$");
+
+            
+        
+        if(saque > saldo)
+        {
+            alert("Saque realizado!")
+        }
+        else if(saldo < saldo){
+            alert("Não há saldo suficiente para o saque");
+        }
+
+
+        }
+    while(saque > saldo);
+    saldo -= saque;
+    }          
+        while(saldo > saldo || deposito > saldo || saque > saldo)
+        permanecer = confirm("Deseja fazer outra operação?");
+    while(permanecer == true);
+
+
+
+    </script>
+</body>
+</html>

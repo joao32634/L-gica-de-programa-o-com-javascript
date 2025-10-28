@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>test7</title>
+
+    <style>
+        body {
+            background-color: rgb(64, 63, 63);
+        }
+        </style>
+</head>
+<body>
+    
+    <button id="Salario" style="position: absolute; top: 50%; left: 45%;" class="btn btn-dark">Calcular Salario</button>
+
+    <script>
+        var Salario = document.getElementById("Salario");
+        Salario.addEventListener("click", () =>{
+            var salario = prompt("Digite o valor do seu salário:");
+             if (salario < 2000) {
+                var novoSalario = salario * 1.05;
+                alert("Seu novo salário é: R$" + novoSalario.toFixed(2));
+
+             }
+
+            if (salario >= 2000) {
+                var novoSalario = salario * 1.038;
+                alert("Seu novo salário é: R$" + novoSalario.toFixed(2));
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <title>test 8</title>
+    <style>
+        body {
+            background-color: rgb(103, 37, 138);
+        }
+    </style>
+</head>
+<body>
+    <button id="Calcular" class="btn btn-warning" style="position: absolute; top: 50%; left:45%;">Identificar</button>
+
+      <!--<script>
+        var Calcular = document.getElementById("Calcular");
+        Calcular.addEventListener("click", () =>{
+            var numero1 = prompt("Digite o primeiro número: ");
+            var numero2 = prompt("Digite o segundo número: ");
+             
+        if (numero1 > numero2) {
+            alert("O primeiro número é maior: " + numero1);
+
+        if (numero1 == numero2) {
+            alert("Os números são iguais: ");
+        }
+        } 
+        else  {
+            alert("O segundo número é maior: " + numero2);
+        }
+            
+           
+            });
+    </script>-->
+
+    <script>
+     var Calcular = document.getElementById("Calcular");
+     Calcular.addEventListener("click", () =>{
+
+        var PreçoGasolina = prompt("Digite o preço da Gasolina")
+        var PreçoAlcool = prompt("Digite o preço do Alcool")
+
+
+        if (PreçoAlcool < PreçoGasolina * 0.7) {
+            alert("Alcool vale mais apena ");
+        }
+        else{
+            alert("Gasolina vale mais apena");
+        }
+     });
+    
+    </script>
+</body>
+</html>

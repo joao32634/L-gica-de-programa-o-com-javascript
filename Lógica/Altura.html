@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+            var AltChico = 150;
+            var AltZe = 110;
+            var tempo = 0;
+
+        alert("Chico tem 1,50 metro e cresce 2 centímetros por ano, enquanto zé tem 1,10 metro e cresce  3 centimetros por ano.")
+
+        while(AltZe <= AltChico){
+            AltChico += 2;
+            AltZe += 3
+            tempo++
+            var totalZe = parseFloat(AltZe + tempo).toFixed(2);
+            var totalChico = parseFloat(AltChico + tempo).toFixed(2);
+        }
+        alert("Serão necessarios "  + tempo +  " anos " + "Até que Zé seja mais alto que Chico. Altura Zé: " + totalZe + " Altura Chico: " + totalChico);
+
+
+    </script>
+</body>
+</html>

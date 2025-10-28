@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*var sair = false;
+
+    while(sair == false){
+        var n1 = prompt("Digite o primeiro número: ");
+        var n2 = prompt("Digite o segundo número: ");
+
+        var total = parseInt(n1) + parseInt(n2);
+        alert("Total = " + total);
+        
+        sair = confirm("Deseja Fechar a calculadora?");
+    }*/
+
+   /*var acertou = false;
+
+   while(acertou == false){
+    var numeroSorteado = Math.floor(Math.random() * (10 - 1 + 1)) +1;
+
+    var chute = prompt("Digite um número entre 1 e 10: ");
+
+    if (chute == numeroSorteado){
+        alert("Parabéns! Você acertou o número sorteado quer um biscoito?");
+        acertou = true;
+    
+    }
+    else{
+        alert("Número errado! Tente novamente.");
+    }
+   }*/
+
+ 
+  
+  var min = 2;
+  var max = 3;
+
+  var vezes = 1;
+  var contadorCandidato1 = 0;
+  var contadorCandidato2 = 0;
+
+
+  while(vezes <= 51){
+      var voto = Math.floor(Math.random() * (max - min +1) + min);
+        if(voto == 2){
+            contadorCandidato1++;
+        }
+        else{
+            contadorCandidato2++;
+        }
+        vezes++;
+        }
+        var Vencedor = " ";
+        if (contadorCandidato1 > contadorCandidato2){
+            Vencedor = "Candidato1";
+        }
+        else{
+            Vencedor = "Candidato2"
+        }
+
+        alert("Candidato1 recebeu" + contadorCandidato1 + "votos\n" +
+              "Candidato2 recebeu" + contadorCandidato2 + "votos\n" +
+              "O vencedor foi: " + Vencedor
+        );
+  /*var chute = prompt("Digite quantos numeros estão entre 1 e 50: ");
+    if(chute >= 1 && chute <= 50){
+          var cont =  Math.floor(Math.random() * (50 - 1 + 1)) + 1;
+
+        
+        alert("Há " + cont + " Números entre 1 e 50.");
+        
+        
+    }
+    else{
+        alert("Número inválido! Por favor, digite um número entre 1 e 50.");
+        break;
+    }*/
+
+  
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(63, 63, 63);
+    }
+</style>
+<body>
+    
+    <button id="Verificação">Confirme captcha aqui</button>
+
+    <script>
+            /*var captcha = prompt("Por favor, digite o texto 'AGFKD22345' para confirmar que você não é um robô: ");
+            if (captcha == "AGFKD22345")
+        {
+            alert("Confirmação bem-sucedida! você não é um robô.");
+        }
+        else{
+            alert("Confirmação falhou! Por favor, tente novamente.");
+        }*/
+
+        var button = document.getElementById("Verificação");
+        button.addEventListener("click", () =>{
+            var pergunta = confirm("Mora perto da vítima?");
+            var pergunta2 = confirm("Devia à vítima?");
+            var pergunta3 = confirm("Já trabalhou com a vítima?");
+            var pergunta4 = confirm("Já ligou para a vítima?");
+            var pergunta5 = confirm("conhecia a vítima?");
+
+
+            var contador = 0;
+
+            if (pergunta){
+                contador++;
+            }
+            if (pergunta2){
+                contador++;
+            }
+            if (pergunta3){
+                contador++;
+            }
+            if (pergunta4){
+                contador++;
+            }
+            if (pergunta5){
+                contador++;
+            }
+            if (contador == 5){
+                alert("Assassino");
+            }
+            else if (contador >=3 && contador <=4){
+                alert("Cúmplice");
+            }
+            else if (contador ==2){
+                alert("Suspeito");
+            }
+            else if (contador < 2){
+                alert("Inocente");
+            }   
+       }); 
+    </script>
+</body>
+</html>
