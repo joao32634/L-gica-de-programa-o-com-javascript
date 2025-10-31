@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        
+        function soma(n1, n2){
+            var total = parseInt(n1) + parseInt(n2);
+            
+            alert("total: " + total);
+        }
+            function subtracao(n1, n2){
+            var subtracao = parseInt(n1) - parseInt(n2);
+            alert("Total: " + subtracao);
+
+        }
+            function multiplicacao(n1, n2){
+            var multiplicacao = parseInt(n1) * parseInt(n2);
+            alert("Total: " + multiplicacao);
+
+        }
+
+            function divisao(n1, n2){
+            var divisao = parseInt(n1) / parseInt(n2);
+            alert("Total: " + divisao);
+
+        }
+
+
+
+
+
+        do{
+        var num1 = prompt("Digite o 1° número");
+        var num2 = prompt("Digite o 2° número");
+        var opcao = prompt("Escolha a operação:\n 1. Soma \n 2. Subtração \n 3. multiplicação \n 4. divisão");
+        switch(opcao){
+        case("1"):
+            soma(num1, num2);
+            break;
+        case("2"):
+            subtracao(num1, num2);
+            break;    
+        case("3"):
+            multiplicacao(num1, num2);
+            break;
+        case("4"):
+          divisao(num1, num2);
+          break;
+          default:
+            alert("Opção inválida.")
+    }
+    var permanecer = confirm("Deseja fazer outra operação?");
+        }while(permanecer = true);
+        
+                
+    </script>
+</body>
+</html>

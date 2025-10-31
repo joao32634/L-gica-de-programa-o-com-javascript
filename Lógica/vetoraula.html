@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        /*preco = [10,25,30]
+        alert(preco[1]);
+         
+        preco.push(50);
+        alert(preco[3]);
+
+        preco[2] = 82;
+        alert(preco[2]);*/
+
+
+        var notas = [];
+        var nomes = [];
+        var soma = 0;
+        for(var i = 0; i < 3; i++){
+            nomes[i] = prompt("Digite o nome do aluno");
+            notas[i] = parseFloat(prompt("Digite uma nota: "));
+
+        }
+        for(var i = 0; i < 3; i++){
+            alert(nomes[i] + " possui nota " + notas[i]);
+            soma += notas[i];
+
+        }
+        var mediaNotas = soma / 3;  
+        alert("Média de notas: " + mediaNotas.toFixed(2));
+    </script>
+</body>
+</html>

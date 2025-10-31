@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*var notas = [];
+var nomes = [];
+var situacao = [];
+for(var i = 0; i < 3; i++){
+    nomes[i] = prompt("Digite o nome do aluno: ");
+    notas[i] = parseFloat(prompt("Digite a nota do aluno: "));
+    
+
+}
+for(var i = 0; i < 3; i++){
+    alert(nomes[i] + " possui nota " + notas[i]);
+
+    
+    if(notas[i] >= 6){
+        alert(nomes[i] + " Aprovado " + notas[i]);
+    }
+    else{
+        alert(nomes[i] + " reprovado(a) " + notas[i]);
+    }
+
+}*/
+
+/*var celsius = [];
+var fahrenheit = [];
+
+var quantidade = prompt("Digite quantos graus celsius quer converter: ");
+for(var i = 0; i < quantidade; i++){
+        celsius[i] = Math.floor(Math.random()*(100 - 0 + 1) + 
+    0);
+        fahrenheit[i] = (celsius[i] * 5/9) + 32;
+
+        alert("Celsius: " + celsius[i] + "°C " + ", Fahrenheit: " + fahrenheit[i].toFixed(0) + "°F");
+}*/
+
+
+
+var aleatorio = [];
+var maior = 0;
+var quantidade = ("Digite a quantidade de números que quer gerar: ");
+
+for(var i = 0; i < 3; i++){
+    
+    aleatorio[i] = Math.floor(Math.random()*(100 - 0 + 1) + 0);
+
+    if(aleatorio[i] > maior){
+        maior = aleatorio[i].toFixed(0);
+    }
+}
+alert(aleatorio);
+alert("O maior númeron é: " + maior.toFixed(0));
+
+</script>
+</body>
+</html>

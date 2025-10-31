@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var total = 0;
+      var preco = [];
+      for(var cont = 0; cont < 4; cont++){
+        preco.push(prompt("Digite o preço dos items: R$"));
+        
+      }
+      for( var cont = 0; cont < 4; cont++){
+        alert(preco[cont]);
+
+        total += parseFloat(preco[cont]);
+      }
+      alert("Total: R$" + total);
+      
+
+</script>
+</body>
+</html>

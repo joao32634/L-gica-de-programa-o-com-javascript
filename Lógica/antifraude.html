@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+     var limite = [];
+     var compra = [];
+     var fraude = [];
+     var estado = [];
+     var titular = [];
+     for(var i = 0; i < 10; i++){
+        limite[i] = Math.floor(Math.random()* (10000 - 3000 + 1 )) + 3000;
+        compra[i] = Math.floor(Math.random()* (10000 - 100 + 1)) + 100;
+        estado[i] = Math.floor(Math.random()* (1 - 0 +1)) + 0;
+        titular[i] = Math.floor(Math.random()* (1 - 0 +1)) + 0;
+     }
+     var criterio = 0 ;
+     for(i = 0; i < 10; i++){
+        if(compra[i] >= limite[i] / 2){
+            criterio++;
+        }
+        if(estado[i] == 0){
+            criterio++;
+        }
+        if(titular[i] == 0) {
+            criterio++;
+        }
+        if(criterio >= 2){
+           fraude[i] = "Fraude";  
+        }
+        else{
+            fraude[i] = "Normal";
+        }
+        criterio = 0;
+    }
+     
+ 
+     alert(compra + "\n" + limite + "\n" + estado + "\n" + titular + "\n" + fraude);
+    </script>
+</body>
+</html>

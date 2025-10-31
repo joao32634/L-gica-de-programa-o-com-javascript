@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function gerarTempo(e, qtd){
+            for(var i = 0; i < qtd; i++){
+                var num = Math.floor(Math.random() * (60 - 20 
+                    + 1) + 20);
+                    e[1][i] = parseInt(num);
+            }
+            return e;
+        }
+
+
+        var eliminatoria = [
+            ['biu', 'ze', 'luiz', 'joao', 'chico', 'casé', 'mario', 'Lee', 'jack', 'james', 'eddy', 'teo', 'natan', 'leon', 'goku', 'buiu'],
+            []
+        ]
+        eliminatoria = gerarTempo(eliminatoria, 16);
+        
+        eliminatoria = eliminatoria[0].map((_, c) => eliminatoria.map( l => l[c]));
+        
+        eliminatoria.sort((a, b) => a[1] - b[1]);
+        alert(eliminatoria);
+        
+    </script>
+    
+
+</body>
+</html>
