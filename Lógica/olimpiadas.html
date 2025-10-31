@@ -28,6 +28,16 @@
         
         eliminatoria.sort((a, b) => a[1] - b[1]);
         alert(eliminatoria);
+
+        var final = [[],[],[],[],[],[],[],[],]
+        for(var i = 0; i < 8; i++){
+ 
+            final[i][0] = eliminatoria[i][0];
+        }
+        final.sort((a, b) => a[1] - b[1]);
+        alert(final);
+        alert("Ouro: " + final[0][0] + ", " + "Prata: " + final[1][0] + ", "+ "Bronze: " + final[2][0]);
+
         
     </script>
     
